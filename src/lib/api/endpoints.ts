@@ -100,6 +100,9 @@ export const API_ENDPOINTS = {
     LIST: "/imports",
     UPLOAD: "/products/import",
     STATUS: (id: string | number) => `/imports/${id}`,
+    TEMPLATE: (format: string) => `/imports/template?format=${format}`,
+    ERRORS_CSV: (id: string | number) => `/imports/${id}/errors-csv`,
+    CANCEL: (id: string | number) => `/imports/${id}/cancel`,
   },
 
   // Security Audit Trail
